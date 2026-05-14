@@ -318,6 +318,10 @@ table {
 	transform: scale(0.95);
 }
 
+.submit:hover {
+	box-shadow: 1px 1px 10px black;
+}
+
 .footer{
 	width: 1110px;
 	margin: 0 auto;
