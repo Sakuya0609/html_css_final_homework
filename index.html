@@ -12,6 +12,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="#">
     <meta property="og:image" content="https://i.ibb.co/yBqjr9wb/hexschool-logo.png">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link href="
+    https://cdn.jsdelivr.net/npm/lightbox2@2.12.0/dist/css/lightbox.min.css
+    " rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,35 +45,69 @@
                 <a class="hexschool-logo" href="#"><img src="https://i.ibb.co/yBqjr9wb/hexschool-logo.png" alt="六角學院"></a>
                 <ul class="menu">
                     <li><a href="#">首頁</a></li>
-                    <li><a href="#">產品介紹</a></li>
+                    <li class="product-info">
+                        <a href="#">產品介紹</a>
+                        <ul>
+                            <li><a href="#">六角學院線上課程</a></li>
+                            <li><a href="#">一般線上課程</a></li>
+                            <li><a href="#">實體課程</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">聯絡我們</a></li>
                 </ul>
             </div>
-            <div class="header-banner">
-                <img src="https://i.ibb.co/B28KbKrq/header-background.png" alt="banner">
-                <div class="title-background"></div>
-                <h1>六角學院<br>讓您奠定良好的前端基礎</h1>
-                
+            <!-- Slider main container -->
+            <div class="swiper header-banner">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="https://i.ibb.co/B28KbKrq/header-background.png" alt="banner">
+                    <div class="title-background"></div>
+                    <h1>六角學院<br>讓您奠定良好的前端基礎</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.ibb.co/B28KbKrq/header-background.png" alt="banner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.ibb.co/B28KbKrq/header-background.png" alt="banner">
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
         </div>
         <div class="content">
             <ul class="course-list">
                 <li class="course-item">
+                    <a data-lightbox="course" data-title="HTML5基礎教學" href="https://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg">
                     <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="HTML5基礎教學">
+                    </a>
                     <h2>HTML5基礎教學</h2>
                     <p>
                         主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
                     </p>
                 </li>
                 <li class="course-item">
+                    <a data-lightbox="course" data-title="響應式網站設計" href="https://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg">
                     <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="響應式網站設計">
+                    </a>
                     <h2>響應式網站設計</h2>
                     <p>
                         響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
                     </p>
                 </li>
                 <li class="course-item">
+                    <a data-lightbox="course" data-title="jQuery實戰教學" href="https://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg">
                     <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQuery實戰教學">
+                    </a>
                     <h2>jQuery實戰教學</h2>
                     <p>本課程有以下特色：</p>
                     <ul>
@@ -155,5 +196,16 @@
                 </ul>
         </div>
     </div>
+    <div class="top">
+        <a href="#"><img src="https://ps.w.org/wpfront-scroll-top/assets/icon.svg?rev=1534312" alt="top"></a>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/lightbox2@2.12.0/dist/js/lightbox.min.js
+    "></script>
+    <script src="all.js"></script>
 </body>
 </html>
