@@ -202,6 +202,7 @@ table {
 .course-item p, .course-item li {
 	font-weight: 400;
 	line-height: 150%;
+	list-style-type: disc;
 }
 
 .course-table {
@@ -305,7 +306,7 @@ table {
 	display: block;
 	margin: 0 auto;
 	width: 160px;
-	height: 38px;
+	padding: 10px;
 	border-radius: 3px;
 	border: 1px solid #00251A;
 	color:#FFFFFF;
@@ -337,8 +338,9 @@ table {
 	line-height: 150%;
 }
 
-.contact-us span {
+.contact-us a {
 	color: #00CC99;
+	text-decoration: none;
 }
 
 .hexschool-logo:hover {

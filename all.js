@@ -45,3 +45,12 @@ lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
   })
+//捲動到設定高度才會出現按鈕
+  $(window).scroll(function() {
+  // 此時的 $(this) 就會等同於 $(window)
+  if ($(this).scrollTop() > 400) {
+    $('.top').fadeIn();
+  } else {
+    $('.top').fadeOut();
+  }
+});
